@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css" />
+    <script type="module" src="./dist/bundle.js"></script>
+    <title>OOP Rendering Practice</title>
+</head>
+
+<body>
+    <template id="user-input-form">
+        <form>
+            <div class="control">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" />
+            </div>
+            <div class="control">
+                <label for="mname">Middle name</label>
+                <input type="text" id="mname" />
+            </div>
+            <div class="control">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" />
+            </div>
+            <div class="control">
+                <label for="age">Age</label>
+                <input type="number" id="age" min="1" max="60" />
+            </div>
+            <button type="submit">create user</button>
+        </form>
+    </template>
+    <template id="users-list">
+        <section id="users">
+            <h2>Created User List</h2>
+            <ul>
+
+            </ul>
+        </section>
+    </template>
+    <template id="user-card">
+        <li class="user">
+            <div class="firstname"></div>
+            <div class="middlename"></div>
+            <div class="lastname"></div>
+            <div class="age"></div>
+        </li>
+    </template>
+    <div id="app">
+        <!-- this is where all the form, div are rendered -->
+    </div>
+</body>
+
+</html>
